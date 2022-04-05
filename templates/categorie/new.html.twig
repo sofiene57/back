@@ -3,9 +3,16 @@
 {% block title %}New Categorie{% endblock %}
 
 {% block body %}
-    <h1>Create new Categorie</h1>
+
+<link rel="stylesheet" href="{{ asset('css/style_crud.css') }}"/>
+
+<main>
+
+    <h1>Ajouter une nouvelle categorie</h1>
 
     {{ include('categorie/_form.html.twig') }}
 
-    <a href="{{ path('app_categorie_index') }}">back to list</a>
+    <a href="{{ path('app_categorie_index') }}">Retour à la liste</a>
+
+</main>
 {% endblock %}

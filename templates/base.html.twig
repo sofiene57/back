@@ -6,14 +6,33 @@
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+        <link rel="stylesheet" href="{{ asset('/css/style.css') }}"/>
         {% endblock %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
     </head>
     <body>
+
+        <header>
+        
+            <nav style="width: 100vw;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="nav2 container-fluid">
+                    <a id="feat" class="navbar-brand" href="#">FEATNESYOU</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a id="a" class="nav-link" href="/">Accueil</a>
+                            <a id="a" class="nav-link" href="/notre_equipe">Votre équipe</a>
+                            <a id="a" class="nav-link" href="/services">Nos services</a>
+                            <a id="a" class="nav-link" href="/contact">Me contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
         {% block body %}{% endblock %}
     </body>
 </html>

@@ -3,11 +3,19 @@
 {% block title %}Edit Categorie{% endblock %}
 
 {% block body %}
-    <h1>Edit Categorie</h1>
 
-    {{ include('categorie/_form.html.twig', {'button_label': 'Update'}) }}
+<link rel="stylesheet" href="{{ asset('css/style_crud.css') }}"/>
 
-    <a href="{{ path('app_categorie_index') }}">back to list</a>
+<main>
 
-    {{ include('categorie/_delete_form.html.twig') }}
+    <h1>Modifier la categorie</h1>
+
+    {{ include('categorie/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+    {{ include('categorie/_delete_form.html.twig') }}   
+
+    <a href="{{ path('app_categorie_index') }}">Retour à la liste</a>
+
+</main>
+    
 {% endblock %}
