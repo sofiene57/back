@@ -3,14 +3,21 @@
 {% block title %}Categorie index{% endblock %}
 
 {% block body %}
-    <h1>Categorie index</h1>
+
+<link rel="stylesheet" href="{{ asset('css/style_crud.css') }}"/>
+
+<main>
+
+    <h1>Categories des produits</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Nom_categorie</th>
-                <th>actions</th>
+                <th>Voir</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
             </tr>
         </thead>
         <tbody>
@@ -19,9 +26,12 @@
                 <td>{{ categorie.id }}</td>
                 <td>{{ categorie.nomCategorie }}</td>
                 <td>
-                    <a href="{{ path('app_categorie_show', {'id': categorie.id}) }}">show</a>
-                    <a href="{{ path('app_categorie_edit', {'id': categorie.id}) }}">edit</a>
+                    <a href="{{ path('app_categorie_show', {'id': categorie.id}) }}">Voir</a>
                 </td>
+                <td>
+                    <a href="{{ path('app_categorie_edit', {'id': categorie.id}) }}">Modifier</a>
+                </td>
+                <td id="sup">{{ include('categorie/_delete_form.html.twig') }} </td>
             </tr>
         {% else %}
             <tr>
@@ -31,5 +41,7 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_categorie_new') }}">Create new</a>
+    <a href="{{ path('app_categorie_new') }}"><button>Ajouter une catégorie</button></a> 
+
+</main>
 {% endblock %}
