@@ -6,7 +6,7 @@
     padding-top: 1%;
 }
 
-#a {
+.a {
     color: #567C7D;
     border: 1px solid #567C7D;
     border-radius: 4px;
@@ -21,7 +21,7 @@
     margin-bottom: 2vh;
 }
 
-#a:hover {
+.a:hover {
     background: #567C7D radial-gradient(circle, transparent 1%, #567C7D 1%) center/15000%;
     color: white;
 }
@@ -420,3 +420,11 @@ button {
 .coach div{
     width: 60%;
 }
+
+
+
+#connexion{
+    display: flex;
+    flex-direction: column;
+}
+
