@@ -1,0 +1,400 @@
+  /*Accuei*/
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+#img1 {
+    width: 100%;
+    height: 30vh;
+    background-image: url(/img/IMG_1.jpeg);
+    background-size: cover;
+    background-position: 0 25%;
+    margin-bottom: 3vh;
+}
+
+#logo {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.imglogo {
+    height: auto;
+    width: 20%;
+    margin: 0 5vw;
+}
+
+#logotxt {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#logotxt hr {
+    width: 50%;
+    color: #567C7D;
+    height: 2px;
+}
+
+#hr2 {
+    width: 20vw;
+    height: 2.5px;
+    margin-bottom: 10vh;
+    color: #567C7D;
+}
+
+.parallax {
+    height: 20vh;
+    width: 100%;
+    background-image: url(/img/dos.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2vh;
+}
+
+h1 {
+    text-align: center;
+    color: #567C7D;
+    
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vh auto;
+    width: 50vw;
+    height: 40vh;
+}
+
+.divpk {
+    border: rgb(0, 0, 0) solid 2px;
+    font-size: 1.5vh;
+    height: 10vh;
+    width: 35vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#video {
+    width: 70vw;
+    height: 20vh;
+    background-color: gray;
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-left: 150px;
+}
+
+/*Votre coach*/
+
+#img2 {
+    width: 100%;
+    height: 30vh;
+    background-image: url(/img/IMG_2.jpeg);
+    background-size: cover;
+    background-position: 0 60%;
+    margin-bottom: 1rem;
+}
+
+#txt2 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#h0 {
+    font-size: 2vh;
+    color: #567C7D;
+}
+
+#eleves{
+    font-size: 2vh;
+}
+
+#presen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+#qsj {
+    width: 50vw;
+    margin-left: 10vw;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#qsj h1 {
+    text-align: left;
+}
+
+#carre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #CFCDCD;
+    border: solid 4px #567C7D;
+    width: 20vw;
+    height: 60%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#carre h1 {
+    font-size: 1rem;
+}
+
+#carre p {
+    font-size: 1rem;
+}
+
+#hr1 {
+    width: 60vw;
+    height: 5px;
+    color: #567C7D;
+    margin-bottom: 10vh;
+}
+
+.img {
+    width: 10vw;
+    margin-bottom: 3vh;
+}
+
+.img {
+    transition-property: width, height;
+}
+
+.img:hover {
+    width: 30vw;
+    height: 70vh;
+    cursor: pointer;
+    margin-bottom: 5vh;
+}
+
+#vivi {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 20vh;
+    margin: 5vh auto;
+}
+
+.video {
+    width: 25%;
+    height: 50%;
+    background-color: rgb(129, 75, 8);
+}
+
+.carou2 {
+    margin-bottom: 30vh;
+}
+
+.carou2 img {
+    height: 70vh;
+}
+
+#carouselExampleFade {
+    width: 40vw;
+    align-items: center;
+}
+
+
+/*Nos services*/
+
+#img3 {
+    width: 100%;
+    height: 80vh;
+    background-image: url(/img/IMG_3.jpeg);
+    background-size: cover;
+    background-position: 0 47%;
+    margin-bottom: 10vh;
+}
+
+h3 {
+    color: #567C7D;
+}
+
+.txtimg {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+h4 {
+    color: #567C7D;
+}
+
+.text {
+    width: 50%;
+    text-align: left;
+    font-size: 2vh;
+}
+
+.txtimg img {
+    width: 30%;
+    height: 55vh;
+}
+
+.imgtxt {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.imgtxt img {
+    width: 30%;
+    height: 55vh;
+}
+
+
+/*Me contacter*/
+
+#body {
+    background-color: black;
+}
+
+.contact {
+    height: 70%;
+    width: 40%;
+    font-size: 2rem;
+    border: solid 1px #567C7D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#info {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+form {
+    width: 50%;
+    height: 65vh;
+    text-align: left;
+    align-items: center;
+}
+
+#message {
+    height: 20vh;
+}
+
+button {
+    color: white;
+    background-color: #567C7D;
+    padding: 1vh 3vh;
+}
+
+.blanc{
+    color: red;
+    font-size: 1vh;
+}
+
+#carte {
+    margin-bottom: 5vh;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #567C7D;
+    height: auto;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+#reseau{
+    height: 100%;
+    width: 5vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#reseau img{
+    max-height: 2rem;
+    margin: 1rem;
+}
+
+/* Fin page */
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    padding-top: 1%;
+}
+
+#a {
+    color: #567C7D;
+    border: 1px solid #567C7D;
+    border-radius: 4px;
+    padding: 10px 18px 40px 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 20px;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    background-position: center;
+    transition: background 0.8s;
+    margin-bottom: 2vh;
+}
+
+#a:hover {
+    background: #567C7D radial-gradient(circle, transparent 1%, #567C7D 1%) center/15000%;
+    color: white;
+}
+
+a:active {
+    background-color: #292d3e;
+    background-size: 100%;
+    transition: background 0s;
+}
