@@ -16,6 +16,14 @@ class PagesController extends AbstractController
         ]);
     }
 
+    #[Route('/coach', name: 'coach')]
+    public function coach(): Response
+    {
+        return $this->render('pages/coach.html.twig', [
+            'controller_name' => 'PagesController',
+        ]);
+    }
+
     #[Route('/service', name: 'service')]
     public function service(): Response
     {
@@ -24,10 +32,10 @@ class PagesController extends AbstractController
         ]);
     }
 
-    #[Route('/coach', name: 'coach')]
-    public function coach(): Response
+    #[Route('/boutique', name: 'boutique')]
+    public function boutique(): Response
     {
-        return $this->render('pages/coach.html.twig', [
+        return $this->render('pages/boutique.html.twig', [
             'controller_name' => 'PagesController',
         ]);
     }
@@ -39,4 +47,5 @@ class PagesController extends AbstractController
             'controller_name' => 'PagesController',
         ]);
     }
+
 }

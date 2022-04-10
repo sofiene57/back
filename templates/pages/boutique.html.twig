@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<main>
+    <section id="img4"></section>
+
+    {% for produit in produits %}
+        <section class="produit">
+            <img src="{{ asset('/uploads/'~produit.photo) }}" alt="">
+            <div>
+                <h3>Produit : {{ produit.nomProduit }}</h3>
+                <h3>Prix : {{ produit.prix }}</h3>
+                <h3>
+                    </h3> 
+            </div>
+        </section>
+        {% endfor %}
+</main>
+
+{% endblock %}
