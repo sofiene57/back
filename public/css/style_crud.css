@@ -32,8 +32,16 @@ a{
     padding: 50px;
 }
 
+form{
+    color: black;
+}
+
 label{
     margin: 10px;
+}
+
+button{
+    margin-top: 3vh;
 }
 
 #sup button{
@@ -47,4 +55,9 @@ label{
 
 #sup form{
     display: inline;
+}
+
+#produit_description{
+    width: 20vw;
+    height: 10vh;
 }
