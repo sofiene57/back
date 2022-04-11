@@ -26,6 +26,9 @@ class Produit
     #[ORM\JoinColumn(nullable: false)]
     private $categorie;
 
+    #[ORM\Column(type: 'string', length: 500, nullable: true)]
+    private $Description;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -75,6 +78,18 @@ class Produit
     public function setCategorie(?Categorie $categorie): self
     {
         $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->Description;
+    }
+
+    public function setDescription(?string $Description): self
+    {
+        $this->Description = $Description;
 
         return $this;
     }

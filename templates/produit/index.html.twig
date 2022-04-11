@@ -14,9 +14,10 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Nom_produit</th>
+                <th>Nom</th>
                 <th>Prix</th>
                 <th>Photo</th>
+                <th>Description</th>
                 <th>Voir</th>
                 <th>Modifier</th>
                 <th>Supprimer</th>
@@ -29,6 +30,7 @@
                 <td>{{ produit.nomProduit }}</td>
                 <td>{{ produit.prix }}</td>
                 <td>{{ produit.photo }}</td>
+                <td>{{ produit.description }}</td>
                 <td>
                     <a href="{{ path('app_produit_show', {'id': produit.id}) }}">Voir</a>
                 </td>
