@@ -1,6 +1,6 @@
 @media screen and ( min-width:1024px ) {
 
-/*Navbar*/
+/*NAVBAR*/
 .navbar-nav {
     display: flex;
     justify-content: space-evenly;
@@ -66,7 +66,7 @@ header{
     margin-left: 2vw;
 }
 
-/*Accuei*/
+/*-----------------ACCUEIL------------*/
 
 body {
     display: flex;
@@ -102,7 +102,7 @@ main {
 .imglogo {
     height: 40vh;
     width: 15%;
-    margin: 5vh 10vw;
+    margin: 5vh 5vw;
 }
 
 #logotxt {
@@ -187,7 +187,7 @@ h1 {
     margin-bottom: 10vh;
 }
 
-/*Votre coach*/
+/*-----------------VOTRE COACH-----------*/
 
 #img2 {
     width: 100%;
@@ -204,21 +204,21 @@ h1 {
     display: flex;
     align-items: center;
     text-align: center;
-    height: 50vh;
-    margin-bottom: 15vh;
+    height: 40vh;
+    margin-bottom: 10vh;
 }
 
 #eleves{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #h0 {
-    font-size: 7vh;
+    font-size: 6vh;
     color: #567C7D;
 }
 
 #presen {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -230,6 +230,7 @@ h1 {
     height: 80vh;
     text-align: left;
     font-size: 2.8vh;
+    padding-top: 7vh;
 }
 
 #qsj h1 {
@@ -272,7 +273,7 @@ h2{
 }
 
 .img {
-    transition-property: width, height;
+    transition: all;
 }
 
 .img:hover {
@@ -285,9 +286,9 @@ h2{
 #vivi {
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     height: 30vh;
-    margin: 5vh;
+    margin-bottom: 15vh;
 }
 
 .video {
@@ -309,7 +310,7 @@ h2{
     align-items: center;
 }
 
-/*Nos services*/
+/*------------------------NOS SERVICES-------------------*/
 
 #img3 {
     width: 100%;
@@ -330,14 +331,16 @@ h2{
 
 h3 {
     color: #567C7D;
+    font-size: 5rem;
 }
 
 .txtimg {
     width: 90%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5vh;
+    margin: 10vh;
 }
 
 h4 {
@@ -358,9 +361,10 @@ h4 {
 .imgtxt {
     width: 90%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5vh;
+    margin: 10vh;
 }
 
 .imgtxt img {
@@ -368,28 +372,17 @@ h4 {
     height: 55vh;
 }
 
-/*Me contacter*/
+/*-------------------ME CONTACTER----------------*/
 
 #main{ 
     background-color: black;
 }
 
 .blanc{
-    font-size: 7vh;
+    font-size: 5vh;
     margin-bottom: 10vh;
     margin-top: 20vh;
     color: white;
-}
-
-.contact {
-    height: 65%;
-    width: 35%;
-    border: solid 1px #567C7D;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: white;
-    font-size: 4vh;
 }
 
 #info {
@@ -398,6 +391,19 @@ h4 {
     justify-content: space-around;
     height: 50vh;
 }
+
+.contact {
+    height: 50%;
+    width: 30%;
+    border: solid 1px #567C7D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 3vh;
+}
+
+
 
 form {
     width: 40%;
@@ -434,7 +440,7 @@ button {
     margin-bottom: 5vh;
 }
 
-/*La Boutique*/
+/*------------------LA BOUTIQUE---------------*/
 
 #img4 {
     width: 100%;
@@ -448,74 +454,28 @@ button {
 
 .produit{
     display: flex;
+    height: 50vh;
+    width: 90%;
+    margin-bottom: 10vh;
+}
+
+.imgpro{
+    width: 40%;
+    height: auto;
+}
+
+.txtpro h3{
+    font-size: 3rem;
+}
+
+.txtpro p{
+    font-size: 2rem;
 }
 
 
 /*Me contacter*/
 
-#main{ 
-    background-color: black;
-}
 
-.blanc{
-    font-size: 7vh;
-    margin-bottom: 10vh;
-    margin-top: 20vh;
-    color: white;
-}
-
-.contact {
-    height: 65%;
-    width: 35%;
-    border: solid 1px #567C7D;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: white;
-    font-size: 4vh;
-}
-
-#info {
-    width: 90vw;
-    display: flex;
-    justify-content: space-around;
-    height: 50vh;
-}
-
-form {
-    width: 40%;
-    height: 20%;
-    text-align: left;
-    align-items: center;
-    margin-bottom: 5%;
-}
-
-#message {
-    height: 20vh;
-}
-
-#email{
-    height: 7vh;
-}
-
-#prenom{
-    height: 7vh;
-}
-
-button {
-    color: white;
-    background-color: #567C7D;
-    padding: 1vh 3vh;
-}
-
-.label {
-    color: white;
-    font-size: 3vh;
-}
-
-#carte {
-    margin-bottom: 5vh;
-}
 
 footer{
     display: flex;

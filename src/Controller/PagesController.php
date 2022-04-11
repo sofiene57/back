@@ -2,9 +2,13 @@
 
 namespace App\Controller;
 
+use App\Entity\Produit;
+use App\Form\ProduitType;
+use App\Repository\ProduitRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Doctrine\ORM\EntityManagerInterface;
 
 class PagesController extends AbstractController
 {
@@ -33,10 +37,15 @@ class PagesController extends AbstractController
     }
 
     #[Route('/boutique', name: 'boutique')]
-    public function boutique(): Response
+    public function boutique(EntityManagerInterface $entityManager): Response
     {
+        $produits = $entityManager
+        ->getRepository(Produit::class)
+        ->findAll();
+
         return $this->render('pages/boutique.html.twig', [
             'controller_name' => 'PagesController',
+            'produits' => $produits
         ]);
     }
 
