@@ -7,12 +7,10 @@
 
     {% for produit in produits %}
         <section class="produit">
-            <img src="{{ asset('/uploads/'~produit.photo) }}" alt="">
-            <div>
+            <img class="imgpro" src="{{ asset('/uploads/'~produit.photo) }}" alt="" width="150">
+            <div class="txtpro">
                 <h3>Produit : {{ produit.nomProduit }}</h3>
-                <h3>Prix : {{ produit.prix }}</h3>
-                <h3>
-                    </h3> 
+                <p>Prix : {{ produit.prix }}</p>
             </div>
         </section>
         {% endfor %}

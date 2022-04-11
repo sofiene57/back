@@ -1,4 +1,4 @@
-  /*Accuei*/
+ /*-----------------ACCUEIL------------*/
 
   body {
     display: flex;
@@ -102,10 +102,10 @@ h1 {
     color: white;
     text-align: center;
     margin-bottom: 10vh;
-    margin-left: 150px;
+    
 }
 
-/*Votre coach*/
+/*-----------------VOTRE COACH-----------*/
 
 #img2 {
     width: 100%;
@@ -118,7 +118,7 @@ h1 {
 
 #txt2 {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -130,7 +130,7 @@ h1 {
 }
 
 #eleves{
-    font-size: 2vh;
+    font-size: 1.5vh;
 }
 
 #presen {
@@ -143,9 +143,9 @@ h1 {
 
 #qsj {
     width: 50vw;
-    margin-left: 10vw;
     text-align: left;
     font-size: 1.5rem;
+    margin-top: 4vh;
 }
 
 #qsj h1 {
@@ -159,7 +159,7 @@ h1 {
     background-color: #CFCDCD;
     border: solid 4px #567C7D;
     width: 20vw;
-    height: 60%;
+    height: 20vh;
     text-align: center;
     margin-top: 5vh;
 }
@@ -176,7 +176,7 @@ h1 {
     width: 60vw;
     height: 5px;
     color: #567C7D;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .img {
@@ -190,7 +190,7 @@ h1 {
 
 .img:hover {
     width: 30vw;
-    height: 70vh;
+    height: 20vh;
     cursor: pointer;
     margin-bottom: 5vh;
 }
@@ -199,13 +199,14 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
-    height: 20vh;
-    margin: 5vh auto;
+    height: 15vh;
+    margin: 3vh auto;
+    align-items: center;
 }
 
 .video {
     width: 25%;
-    height: 50%;
+    height: 10vh;
     background-color: rgb(129, 75, 8);
 }
 
@@ -227,62 +228,90 @@ h1 {
 
 #img3 {
     width: 100%;
-    height: 80vh;
+    height: 30vh;
     background-image: url(/img/IMG_3.jpeg);
     background-size: cover;
-    background-position: 0 47%;
-    margin-bottom: 10vh;
+    background-position: 0 50%;
+    margin-bottom: 5vh;
 }
 
 h3 {
     color: #567C7D;
+    margin: 3.5vh;
 }
 
 .txtimg {
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 5vh;
 }
 
 h4 {
     color: #567C7D;
+    font-size: 2rem;
 }
 
 .text {
-    width: 50%;
+    width: 90%;
     text-align: left;
-    font-size: 2vh;
+    font-size: 1vh;
 }
 
 .txtimg img {
-    width: 30%;
-    height: 55vh;
+    width: 0%;
 }
 
 .imgtxt {
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 5vh;
 }
 
 .imgtxt img {
-    width: 30%;
-    height: 55vh;
+    width: 0%;
 }
 
 
 /*Me contacter*/
 
-#body {
+#main {
     background-color: black;
+    width: 100%;
+}
+
+.blanc{
+    font-size: 1.5vh;
+    margin: 5vh;
+    color: white;
+}
+
+form {
+    width: 50%;
+    height: 35vh;
+    text-align: left;
+    align-items: center;
+    color: white;
+}
+
+#message {
+    height: 10vh;
+}
+
+#info {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
 }
 
 .contact {
-    height: 70%;
+    height: 15vh;
     width: 40%;
     font-size: 2rem;
     border: solid 1px #567C7D;
@@ -292,33 +321,14 @@ h4 {
     justify-content: space-evenly;
 }
 
-#info {
-    width: 90vw;
-    display: flex;
-    justify-content: space-around;
-    height: 50vh;
-}
-
-form {
-    width: 50%;
-    height: 65vh;
-    text-align: left;
-    align-items: center;
-}
-
 #message {
-    height: 20vh;
+    height: 10vh;
 }
 
 button {
     color: white;
     background-color: #567C7D;
     padding: 1vh 3vh;
-}
-
-.blanc{
-    color: red;
-    font-size: 1vh;
 }
 
 #carte {
